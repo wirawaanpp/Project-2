@@ -18,6 +18,7 @@
 <style>	
 .button {
   border: none;
+  border-radius: 25px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -35,8 +36,9 @@ h1 {
 .center {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  width: 125;
+  margin-right: 10px;
+  width: 100;
+  border-radius: 60px;
 }
 </style>
 </head>
@@ -44,14 +46,14 @@ h1 {
 <body>
 <br><br><br>
 <nav 
-		class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+		class="navbar navbar-expand-lg bg-info text-uppercase fixed-top"
 		id="mainNav">
 		<div class="container">
 		<h1><%="Welcome : " %><c:out value='${record.username}' />
 			</h1>
 			 
 				<div  class="collapse navbar-collapse" id="navbarResponsive">
-			<img src="getimage?id=<c:out value='${record.id}' />" class="center" width="125" height ="125"  border="1" >
+			<img src="getimage?id=<c:out value='${record.id}' />" class="center" width="100" height ="100"  border="1" >
 			
 		
 				<ul  class="navbar-nav ms-auto">
